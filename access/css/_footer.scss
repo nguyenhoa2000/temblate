@@ -1,0 +1,26 @@
+.footer {
+    padding: 32px;
+    background-color: #616161;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    .back__top {
+        padding: 12px 24px;
+        background-color: $blackColor;
+        color: white;
+        font-size: 15px;
+        display: inline-block;
+        width:auto;
+        span {
+            margin-left: 8px;
+        }
+        cursor: pointer;
+        margin-bottom: 32px;
+    }
+    .source {
+       padding-bottom: 16px;
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}   

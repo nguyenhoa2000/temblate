@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;    
+    color: $blackColor;  
+    position: relative;                       
+}
+
+
+.container {
+    padding: 25px 33px;
+    background-color: #f1f1f1;
+}
+button {
+    padding: 8px 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #f44336;
+    color: #fff;
+    &:hover {
+      background-color: #ccc;
+      color: #333;
+      cursor: pointer;
+    }
+  }
+
+  input {
+    font-size: 15px;
+    padding: 6px 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+.modal.open {
+    display: flex;
+}
+
+.replies {
+  display: none;
+}
+
+@keyframes showform {
+  from {
+    opacity:0;
+    transform: translateY(-550px)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

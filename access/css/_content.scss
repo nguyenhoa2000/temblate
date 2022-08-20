@@ -1,0 +1,320 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 32px;
+
+  &__left {
+    grid-column: 1/3;
+  }
+
+  &__post {
+    background-color: #fff;
+    padding: 22px 24px 28px;
+    margin-bottom: 16px;
+    &:first-child {
+      margin-bottom: 41px;
+    }
+    &--header {
+      text-align: center;
+    }
+
+    &--title {
+      font-size: 24px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+
+    &--desc {
+      font-size: 18px;
+      padding-bottom: 20px;
+
+      span {
+        color: rgba(0, 0, 0, 0.6);
+        text-transform: capitalize;
+      }
+    }
+
+    &--image {
+      height: 0;
+      padding-bottom: 65.8%;
+      position: relative;
+      margin-bottom: 25px;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &--body {
+      font-family: "Open Sans", sans-serif;
+      padding-bottom: 30px;
+
+      p:first-child {
+        padding-bottom: 15px;
+
+        span {
+          font-weight: 700;
+        }
+      }
+      .post--body__paragraph  {
+        text-align: justify;
+      }
+    }
+
+    &--feedback {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 50px;
+      margin-bottom: 20px;
+      font-family: "Open Sans", sans-serif;
+
+      .feedback__btn {
+        padding: 8px 16px;
+        background-color: #fff;
+        border: 1px solid #eaeaea;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #eaeaea;
+          transition: all 0.5s;
+        }
+
+        &:last-child {
+          background-color: $blackColor;
+          color: #fff;
+          text-transform: capitalize;
+
+          span {
+            display: inline-block;
+            padding: 0 8px;
+            background-color: #fff;
+            color: $blackColor;
+            margin-left: 4px;
+          }
+
+          &:hover {
+            background-color: #ccc;
+            color: $blackColor;
+          }
+        }
+      }
+    }
+
+    .comment {
+      border-top: 1px solid #eee;
+      padding: 20px 0 0;
+      // display: none;
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &__image {
+          width: 90px;
+          height: 108px;
+          position: relative;
+
+          img {
+            object-fit: cover;
+            position: absolute;
+            inset: 0;
+          }
+        }
+
+        &__comment {
+          font-size: 15px;
+          padding-left: 62px;
+          max-width: 82rem;
+          flex: 1;
+
+          name {
+            font-size: 20px;
+          }
+
+          time {
+            color: rgba(0, 0, 0, 0.6);
+          }
+
+          .comment__content {
+            padding-top: 15px;
+            font-size: 15px;
+            font-family: "Open Sans", sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  ///////////////////////////////////////////////////////////
+  &__right {
+    grid-column: 3/4;
+
+    .popular__post {
+      margin-top: 201px;
+      margin-bottom: 41px;
+
+      &--item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 16px 11px;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+
+        .category {
+          flex: 1;
+          padding-left: 16px;
+          font-family: "Open Sans", sans-serif;
+
+          &__title {
+            font-size: 18px;
+          }
+        }
+
+        &:hover {
+          background-color: #ccc;
+          cursor: pointer;
+        }
+      }
+
+      &--img {
+        width: 50px;
+        height: 56px;
+      }
+    }
+
+    .Advertise {
+      &__content {
+        padding-bottom: 50.11%;
+        background-color: #fff;
+        position: relative;
+        margin-bottom: 41px;
+
+        .title {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          padding: 16px;
+          background-color: #f1f1f1;
+          background-clip: content-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Open Sans", sans-serif;
+        }
+      }
+    }
+
+    .tag {
+      margin-bottom: 41px;
+      &__content {
+        font-family: "Open Sans", sans-serif;
+        padding: 15px 16px;
+        background-color: #fff;
+
+        span {
+          padding: 0 8px;
+          background-color: #f1f1f1;
+          font-size: 12px;
+          margin-right: 4px;
+          line-height: 3;
+          cursor: pointer;
+
+          &:first-child {
+            background-color: $blackColor;
+            font-size: 15px;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .Inspiration {
+      margin-bottom: 41px;
+      &__content {
+        background-color:#fff;
+        padding: 15px 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 138px 138px;
+        grid-gap: 15px 16px;
+      }
+    }
+
+    .social {
+      &__content {
+        padding: 14px 16px;
+        background-color: #fff;
+        margin-bottom: 41px;
+        span {
+          font-size: 24px;
+          margin-right: 6px;
+          display:inline-block;
+          cursor: pointer;
+          &:hover i{
+            color: #ccc;
+          }
+        }
+      }
+    }
+    .Subscribe {
+      font-family: "Open Sans", sans-serif;
+      &__content {
+        padding:15px 16px;
+        background-color: #fff;
+        
+        
+      }
+      &__text {
+        padding-bottom: 15px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__author {
+    width: 100%;
+    padding-bottom: 53.17%;
+    background: url("https://www.w3schools.com/w3images/avatar_girl2.jpg")
+      no-repeat top center/cover;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .author--intro {
+      position: absolute;
+      top: 100%;
+      background-color: $blackColor;
+      color: #fff;
+      padding: 10px 16px 15px;
+
+      .author--name {
+        padding-bottom: 15px;
+        font-size: 20px;
+      }
+
+      .author--desc {
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+}
+
+.heading__tag {
+  background-color: $blackColor;
+  color: #fff;
+  padding: 18px 16px;
+  font-size: 20px;
+  text-transform: capitalize;
+}

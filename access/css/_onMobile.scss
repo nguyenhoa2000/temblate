@@ -1,0 +1,93 @@
+@media screen and (max-width:1024px) {
+    .content__right .Inspiration__content {
+        background-color:#fff;
+        padding: 15px 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 83.33px 83.33px;
+        grid-gap: 15px 16px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .content {
+        display: block;
+    }
+
+
+    .content__right .Inspiration__content {
+        background-color:#fff;
+        padding: 15px 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 248px 248px;
+        grid-gap: 15px 16px;
+    }
+
+    .content__right .Subscribe__text  {
+        padding-bottom: 8px;
+        font-size: 14px;
+
+    }
+
+    .modal__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        display: none;
+    }
+    .brand {
+        &__name--text {
+            display: none;
+        }
+        &__btn {
+            margin-top: 10px;
+        }
+    }
+
+    .content__post .comment .user {
+        display:block;
+    }
+
+    .content__post .comment .user__comment {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .Subscribe {
+        input {
+            margin-top: 10px;
+        }
+    }
+
+    .content__right .Inspiration__content {
+        background-color:#fff;
+        padding: 15px 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-gap: 15px 16px;
+    }
+
+    .modal__container {
+        padding-left: 36px;
+        padding-right: 36px;
+        .close {
+            top: 38px;
+            right: 25px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:374px) {
+    .brand__logo {
+        padding: 48px 16px;
+    }
+}

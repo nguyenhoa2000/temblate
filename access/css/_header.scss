@@ -1,0 +1,48 @@
+.header {
+  height: 4rem;
+  background-color: $blackColor;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  position:fixed;
+  inset: 0;
+  z-index: 10;
+
+  &__social {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+
+    &--item {
+      height: 100%;
+      a {
+        color: #fff;
+        padding: 8px 16px;
+        display: block;
+      }
+
+      &:hover {
+        background: $colorBtn;
+        a {
+          color: $blackColor;
+        }
+      }
+    }
+  }
+  &__search {
+    color:#fff;
+    font-size: 15px;
+    padding: 8px 16px;
+    height:100%;
+    cursor: pointer;
+    &:hover {
+        background: $colorBtn;
+        color: $blackColor;
+        a {
+            color: #fff;
+            display: block;
+        }
+    }
+  }
+}
